@@ -13,7 +13,7 @@ description: DE from Somewhere
 #
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/longpt233/longpt233.github.io/master/images/long_logo.png
+avatar: https://raw.githubusercontent.com/longpt233/longpt233.github.io/master/images/long_logo.jpeg
 
 
 # Tabs in header. There are 'Blog', 'About', 'Archive', 'Tags'
@@ -38,10 +38,10 @@ paginate: 5
 footer-links:
   behance: # https://www.behance.net/<username>
   dribbble:
-  email:
+  email: phanthanhlong233@gmail.com
   facebook:
   flickr:
-  github: github.com/longpt233
+  github: longpt233
   googleplus: # anything in your profile username that comes after plus.google.com/
   instagram:
   linkedin:
