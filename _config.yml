@@ -22,8 +22,8 @@ avatar: https://raw.githubusercontent.com/longpt233/longpt233.github.io/master/i
 navigation:
   - name: Blog
     url: /
-  # - name: About
-  #   url: /about
+  - name: About
+    url: /about
   - name: Archive
     url: /archive
   - name: Tags
