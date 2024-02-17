@@ -3,8 +3,10 @@ layout: post
 title: Data Intensive Application
 tags:
   - book
-  - tech
+  - bigdata
 ---
+
+Sách nhập môn cho bigdata ?
 
 chương 3: lưu trữ và truy vấn
 

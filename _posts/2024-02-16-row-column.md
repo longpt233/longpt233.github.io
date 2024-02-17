@@ -5,6 +5,8 @@ tags:
   - bigdata
 ---
 
+lí do sinh ra colume db: kích thước dữ liệu
+
 ## 2 cách lưu trữ dữ liệu khác nhau
 
 - lưu trữ dưới dạng row: 
@@ -39,6 +41,7 @@ BMW:001, Porsche:002, Mercedes-Benz:003
 - 1 word là một đơn vị nhỏ nhất để load lên mem xử lí, ví dụ os 32-bit 1 word = 32bit = 4 byte
 - thứ tự sắp xếp của các field trong một obj sẽ liên quan tới sự sắp xếp các field trong mem 
 - nếu một thuộc tính có dung lượng lớn hơn 1 word thì nó sẽ được chuyển sang word tiếp theo. cơ chế là sẽ k load dữ liệu trên 2 word
+
 ```
 struct Option1  
 { 
@@ -56,6 +59,7 @@ word 4: 1byte(bool của item 4) + 3byte(padding-null)
 ```
 
 - nếu sắp xếp lại thứ tự: tiết kiệm được 4 byte
+
 ```
 struct Option1  
 { 
