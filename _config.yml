@@ -52,6 +52,7 @@ footer-links:
   twitter: # jekyllrb
   youtube: # channel/<your_long_string> or user/<user-name>
   blog1: https://demanejar.github.io
+  tele: https://t.me/duahaukhonghat
 
 # Text under the icons in footer
 footer-text: © 2017 Kiko Now
