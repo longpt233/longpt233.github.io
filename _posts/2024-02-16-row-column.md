@@ -5,7 +5,7 @@ tags:
   - bigdata
 ---
 
-lí do sinh ra colume db: kích thước dữ liệu
+lí do sinh ra column db: kích thước dữ liệu
 
 ## 2 cách lưu trữ dữ liệu khác nhau
 
