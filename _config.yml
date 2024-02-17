@@ -51,6 +51,7 @@ footer-links:
   tumblr: # https://<username>.tumblr.com
   twitter: # jekyllrb
   youtube: # channel/<your_long_string> or user/<user-name>
+  blog1: https://demanejar.github.io
 
 # Text under the icons in footer
 footer-text: © 2017 Kiko Now
