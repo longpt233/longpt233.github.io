@@ -2,7 +2,6 @@
 layout: post
 title: Data Intensive Application
 tags:
-  - book
   - bigdata
 ---
 

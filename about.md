@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello, I'm Long. 
 
-### More Information
+### About me
 
-A place to include any other types of information that you'd like to include about yourself.
+Một người thích chia sẻ một chút kiến thức nhỏ bé của mình cho mọi người. 
+
+### How to use
+
+Vì có thể lượng bài trên blog này có thể sẽ lớn dần lên theo thời gian, các bạn có thể  chuyển qua tab tags để đọc theo từng chủ đề sẽ dễ hơn. Mình luôn để một bài thuộc một tags nên yên tâm là đọc theo tags sẽ không thừa không thiếu gì cả
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+follow [github](https://github.com/longpt233), [gmail](mailto:phanthanhlong@gmail.com) hoặc [telegram](https://t.me/duahaukhonghat). Rất vui được làm quen với bạn.

@@ -4,8 +4,8 @@
 
 - tên bài bắt buộc bắt đầu bằng chữ in hoa (title)
 - câu đầu tiên là câu giới thiệu về bài viết
-- hạn chế 1 bài có nhiều tags(tối đa 2, ưu tiên 1)
-- hỗ trợ ảnh, toggle, bảng
+- 1 bài có 01 tags
+- hỗ trợ ảnh, toggle, bảng, trích code thì phải xuống dòng không nó sẽ bị ăn theo lề của thẻ cha nó dẫn đến lúc thò lúc thụt
 
 ## Referrence
 
