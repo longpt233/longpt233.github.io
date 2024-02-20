@@ -5,7 +5,7 @@ tags:
   - bigdata
 ---
 
-Sách nhập môn cho bigdata ?
+sách nhập môn cho bigdata ?
 
 chương 3: lưu trữ và truy vấn
 
