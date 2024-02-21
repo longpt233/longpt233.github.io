@@ -111,6 +111,7 @@ EXPLAIN SELECT * FROM example_table WHERE salary is null;
 ```
 EXPLAIN SELECT * FROM example_table WHERE salary is not null;
 ```
+
 | id | select_type | table         | partitions | type | possible_keys | key        | key_len | ref   | rows | filtered | Extra                        |
 |----|-------------|---------------|------------|------|---------------|------------|---------|-------|------|----------|-----------------------------|
 | 1  | SIMPLE      | example_table |            | **ALL**  | idx_salary    |  |      |  | 988948   | 50.00   | **Using where**        |
