@@ -37,7 +37,7 @@ CREATE TABLE example_table (
 ### Kịch bản 1
 
 <details markdown="1">
-<summary>insert giá trị null << không null (990001 not null và 1 null)  </summary>
+<summary>insert giá trị null nhỏ hơn nhiều không null (990001 not null và 1 null)  </summary>
 
 
 ```
@@ -66,7 +66,7 @@ select count(*) from example_table where salary is  null;
 </details>
 
 <details markdown="1">
-<summary>thực thi is null và not null thì đều trả kết quả explain như nhau (đang k có index)</summary>
+<summary>thực thi select where is null và not null thì đều trả kết quả explain như nhau (đang k có index)</summary>
 
 ```
 EXPLAIN SELECT * FROM example_table WHERE salary is null;
@@ -97,7 +97,7 @@ show index from example_table;
 </details>
 
 <details markdown="1">
-<summary>kiểm tra index . có ăn index khi select * where is null, hoặc = const  </summary>
+<summary>kiểm tra index với select * where is null, const, hoặc not null. đều ăn index ngoại trừ not null (có thể là do số lượng nhiều quá nên không cần index)  </summary>
 
 ```
 EXPLAIN SELECT * FROM example_table WHERE salary is null;
@@ -128,7 +128,7 @@ EXPLAIN select * from example_table where salary = 101000;
 
 
 <details markdown="1">
-<summary>kiểm tra index với select count(*) where is null, hoặc = const  </summary>
+<summary>kiểm tra index với select * where is null, const, hoặc not null. đều ăn index </summary>
 
 
 ```
@@ -166,6 +166,48 @@ EXPLAIN select count(*) from example_table where salary = 101000;
 
 
 ### kịch bản 2
+
+tiến hành insert lượng bản ghi null nhiều hơn nhiều so với khác null. kết quả tương tự
+
+
+### kịch bản 3
+
+null với khác null số lượng ngang ngang nhau (1 triệu và 1 triệu). kết quả tương tự
+
+chú ý vẫn ăn index tuy nhiên trong các kịch bản thì 
+- is null type = ref 
+- is not null type = range. 
+
+type ref thì có hiệu năng tốt hơn so với range.
+
+
+# Vậy khi nào thì không ăn ?
+
+
+In Oracle, NULL values are not indexed, i. e. this query:
+
+```
+SELECT  *
+FROM    table
+WHERE   column IS NULL
+```
+
+will always use full table scan since index doesn't cover the values you need.
+
+Cách xử lí: (chả biết doc ở đâu)
+
+```
+create index idx_salary_1 on example_table(salary,1);
+```
+
+# Ref
+
+[we commmit](https://wecommit.com.vn/toi-uu-index-voi-gia-tri-null/)
+
+[stackoverflow](https://stackoverflow.com/questions/1017239/how-do-null-values-affect-performance-in-a-database-search)
+
+
+
 
 
 
