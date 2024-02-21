@@ -20,7 +20,7 @@ bạn bảo null thì chẳng ảnh hưởng gì, tôi bảo là chưa chắc
 <summary>Khởi tạo data base</summary>
 
 
-```
+<code>
 DROP DATABASE if exists index_db; 
 CREATE DATABASE index_db;
 use index_db;
@@ -32,7 +32,7 @@ CREATE TABLE example_table (
     salary DECIMAL(10,2)
 );
 
-```
+</code>
 
 </details>
 
