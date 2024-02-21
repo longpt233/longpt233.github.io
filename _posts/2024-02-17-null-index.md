@@ -19,7 +19,7 @@ bạn bảo null thì chẳng ảnh hưởng gì, tôi bảo là chưa chắc
 <details>
 <summary>Khởi tạo data base</summary>
 
-
+<div class="highlight"><pre class="highlight">
 <code>
 DROP DATABASE if exists index_db; 
 CREATE DATABASE index_db;
@@ -33,12 +33,13 @@ CREATE TABLE example_table (
 );
 
 </code>
+</pre></div>
 
 </details>
 
 ### Kịch bản 1
 
-<details>
+<details markdown="0">
 <summary>insert giá trị null << không null (990001 not null và 1 null)  </summary>
 
 
