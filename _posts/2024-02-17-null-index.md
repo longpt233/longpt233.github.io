@@ -39,7 +39,7 @@ CREATE TABLE example_table (
 
 ### Kịch bản 1
 
-<details markdown="0">
+<details markdown="1">
 <summary>insert giá trị null << không null (990001 not null và 1 null)  </summary>
 
 
