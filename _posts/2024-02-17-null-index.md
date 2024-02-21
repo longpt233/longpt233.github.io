@@ -16,11 +16,10 @@ bạn bảo null thì chẳng ảnh hưởng gì, tôi bảo là chưa chắc
 # Thực nghiệm 
 
 
-<details>
+<details markdown="1">
 <summary>Khởi tạo data base</summary>
 
-<div class="highlight"><pre class="highlight">
-<code>
+```
 DROP DATABASE if exists index_db; 
 CREATE DATABASE index_db;
 use index_db;
@@ -31,9 +30,7 @@ CREATE TABLE example_table (
     age INT,
     salary DECIMAL(10,2)
 );
-
-</code>
-</pre></div>
+```
 
 </details>
 
@@ -68,7 +65,7 @@ select count(*) from example_table where salary is  null;
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>thực thi is null và not null thì đều trả kết quả explain như nhau (đang k có index)</summary>
 
 ```
@@ -83,7 +80,7 @@ EXPLAIN SELECT * FROM example_table WHERE salary is null;
 </details>
 
 
-<details>
+<details markdown="1">
 <summary>tiến hành thêm index </summary>
 
 ```
@@ -99,7 +96,7 @@ show index from example_table;
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>kiểm tra index . có ăn index khi select * where is null, hoặc = const  </summary>
 
 ```
@@ -129,7 +126,7 @@ EXPLAIN select * from example_table where salary = 101000;
 </details>
 
 
-<details>
+<details markdown="1">
 <summary>kiểm tra index với select count(*) where is null, hoặc = const  </summary>
 
 

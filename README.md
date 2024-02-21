@@ -10,3 +10,5 @@
 ## Referrence
 
 [theme by kiko-now](https://github.com/aweekj/kiko-now) 
+
+[jekyll-doesnt-render-markdown-when-adding-html](https://stackoverflow.com/questions/35193171/jekyll-doesnt-render-markdown-when-adding-html)
