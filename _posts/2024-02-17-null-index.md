@@ -19,6 +19,7 @@ bạn bảo null thì chẳng ảnh hưởng gì, tôi bảo là chưa chắc
 <details>
 <summary>Khởi tạo data base</summary>
 
+
 ```
 DROP DATABASE if exists index_db; 
 CREATE DATABASE index_db;
@@ -39,6 +40,7 @@ CREATE TABLE example_table (
 
 <details>
 <summary>insert giá trị null << không null (990001 not null và 1 null)  </summary>
+
 
 ```
 INSERT INTO example_table (id, salary) VALUES(6,  null);
