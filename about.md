@@ -6,8 +6,6 @@ permalink: /about/
 
 Hello, I'm Long. 
 
-### About me
-
 Một người thích chia sẻ một chút kiến thức nhỏ bé của mình cho mọi người. 
 
 ### How to use
