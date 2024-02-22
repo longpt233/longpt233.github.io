@@ -15,7 +15,7 @@ system design step by step
 # Ví dụ
 
 
-<details>
+<details markdown="1">
 <summary>paste bin</summary>
 
 
