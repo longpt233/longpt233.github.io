@@ -183,6 +183,10 @@ PartitionBy(col). thì khi load lên, nếu where(col=val), thì nó chỉ cần
 
 [tối ưu partition tools](https://sparkconfigoptimizer.com/)
 
+[stackoverflow](https://stackoverflow.com/questions/24622108/apache-spark-the-number-of-cores-vs-the-number-of-executors)
+
+[cloudera](https://blog.cloudera.com/how-to-tune-your-apache-spark-jobs-part-1/)
+
 
 
 
