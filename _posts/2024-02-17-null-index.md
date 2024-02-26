@@ -165,12 +165,12 @@ EXPLAIN select count(*) from example_table where salary = 101000;
 
 
 
-### kịch bản 2
+### Kịch bản 2
 
 tiến hành insert lượng bản ghi null nhiều hơn nhiều so với khác null. kết quả tương tự
 
 
-### kịch bản 3
+### Kịch bản 3
 
 null với khác null số lượng ngang ngang nhau (1 triệu và 1 triệu). kết quả tương tự
 
@@ -205,6 +205,8 @@ create index idx_salary_1 on example_table(salary,1);
 [we commmit](https://wecommit.com.vn/toi-uu-index-voi-gia-tri-null/)
 
 [stackoverflow](https://stackoverflow.com/questions/1017239/how-do-null-values-affect-performance-in-a-database-search)
+
+[viblo tăng tốc database](https://viblo.asia/p/tang-toc-database-phan-151-indexing-null-trong-oracle-y37Ldw0YJov)
 
 
 

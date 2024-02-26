@@ -7,7 +7,7 @@
 - 1 bài có 01 tags
 - hỗ trợ ảnh, toggle, bảng, 
 - trích code thì phải xuống dòng không nó sẽ bị ăn theo lề của thẻ cha nó dẫn đến lúc thò lúc thụt
-- thẻ toggle thì cần viết hoa chữ cái đầu nếu không nó đi liền với cái mũi tên hơi xấu.
+- thẻ toggle thì cần viết hoa chữ cái đầu nếu không nó đi liền với cái mũi tên hơi xấu. nói chung là cần viết hoa chữ cái đầu hết trừ câu đầu tiên
 
 
 ## Referrence
