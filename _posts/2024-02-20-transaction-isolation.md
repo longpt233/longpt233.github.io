@@ -39,12 +39,19 @@ sắp xếp theo tăng dần isolation. các level thấp hơn thì concurency n
 
 Nếu 2 connection vào db cùng update vào một bản ghi thì sao ? Tuỳ db postgres là read committed (chủ yếu là read commited). mysql thì cao hơn repeatable read
 
+# DB memory
+
+Local memory: được sử dụng bởi mỗi postgres backend process, bao gồm: lưu trữ bảng tạm thời bởi executor, .. 
+
+Shared memory: Shared buffer pool (pages, index), WAL buffer(transaction log), Commit log
 
 # Ref 
 
 [geeksforgeeks](https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/)
 
 [viblo](https://viblo.asia/p/transaction-o-muc-do-co-lap-isolation-level-1ZnbRlWNv2Xo)
+
+[viblo](https://viblo.asia/p/phia-sau-1-cau-query-don-gian-E375z4oJZGW)
 
 
 

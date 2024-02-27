@@ -35,3 +35,8 @@ log structured và page-oriented storage engine
 - sorted string table: sắp xếp các key
 - việc ghi sẽ chậm hơn do dữ liệu cần được sắp xếp
 - sparse index inmemory: vì dữ liệu được sort nên chỉ cần lưu index thưa với các dải key khác nhau (ví dụ trong index chỉ cần có giá trị a, c thì nếu tìm b thì ta chỉ cần quét giá trị nằm giữa a và c là được)
+
+
+# Ref 
+
+[ngtung medium](https://ngtung.medium.com/l%C6%B0%E1%BB%A3c-d%E1%BB%8Bch-designing-data-intensive-applications-ph%E1%BA%A7n-i-ch%C6%B0%C6%A1ng-1-8d54dc7ce70b)

@@ -106,34 +106,6 @@ spark_conf.set('spark.sql.files.maxPartitionBytes', '500mb')
 df = df.repartition(24, 'compared_to_avg')
 ```
 
-
-# Spark join
-
-default: sort merge join
-
-- It is necessary that the data on each partition has the same key values, so the partitions have to be co-located (in this context it is the same as **co-partitioned**). This is done by shuffling the data.
-- Sort the data within each partition in parallel.
-- Join the sorted and partitioned data. This is basically the merging of a dataset by iterating over the elements and joining the rows having the same value for the join key.
-
-Shuffle can be avoided if:
-- Both dataframes have a common Partitioner.
-- One of the dataframes is small enough to fit into the memory, in which case we can use a broadcast hash join.
-
-
-<details markdown="1">
-<summary>Same partitioner example</summary>
-
-
-```
-users = users.repartition('userId').cache() # do not forget to cache!
-joined1 = users.join(addresses, 'userId')
-joined1.show() # 1st shuffle for repartition
-joined2 = users.join(salary, 'userId')
-joined2.show() # skips shuffle for users since it's already been repartitioned
-```
-
-</details>
-
 # Spark flat map
 
 Sau khi flatMap thì số lượng partition khác nhưng mà số hàng sẽ tăng lên. nên repartition sau khi flatMap 
@@ -186,6 +158,8 @@ PartitionBy(col). thì khi load lên, nếu where(col=val), thì nó chỉ cần
 [stackoverflow](https://stackoverflow.com/questions/24622108/apache-spark-the-number-of-cores-vs-the-number-of-executors)
 
 [cloudera](https://blog.cloudera.com/how-to-tune-your-apache-spark-jobs-part-1/)
+
+[chú ý khi lưu, đọc hdfs: size, số lượng parttion, partitionBy](https://towardsdatascience.com/optimizing-output-file-size-in-apache-spark-5ce28784934c)
 
 
 
