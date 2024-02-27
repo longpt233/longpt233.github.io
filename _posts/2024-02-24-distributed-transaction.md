@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: post
 title: Distributed transaction
 tags:
   - micro-service

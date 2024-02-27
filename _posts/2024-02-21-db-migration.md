@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: post
 title: Database migration
 tags:
   - system-design

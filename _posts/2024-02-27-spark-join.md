@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: post
 title: Spark join
 tags:
   - spark

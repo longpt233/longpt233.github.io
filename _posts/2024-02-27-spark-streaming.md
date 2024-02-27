@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: post
 title: Spark Streaming vs Structured Streaming
 tags:
   - spark

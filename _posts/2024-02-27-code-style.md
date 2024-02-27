@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: post
 title: How to code
 tags:
   - life

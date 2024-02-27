@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: post
 title: Trino phân quyền
 tags:
   - trino
