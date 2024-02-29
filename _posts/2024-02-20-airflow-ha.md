@@ -33,7 +33,51 @@ nên dùng celery executor vì nó có thể scale được số lượng các w
 
 ![](../images/2024-02-22%2021-44-01.png)
 
+# Flower
+
 # Mô hình ha
+
+# Cài airflow
+
+<details markdown="1">
+<summary>Cài airflow từ pip</summary>
+
+```
+sudo apt update
+sudo apt install python3-pip -y
+
+export AIRFLOW_HOME=~/airflow
+
+AIRFLOW_VERSION=2.0.1
+PYTHON_VERSION="$(python3 --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
+CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
+
+pip3 install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
+
+hoặc 
+python3.8 -m pip install --upgrade pip
+python3.8 -m pip install apache-airflow==2.5.1
+
+```
+
+</details>
+
+
+```
+
+python3 -m airflow db init 
+# lúc này mới tạo ra cái thưu mục AIRFLOW_HOME
+# mặc định sql_alchemy_conn = sqlite:////home/airflow/airflow2/airflow.db
+
+
+CREATE DATABASE airflow_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'airflow_user' IDENTIFIED BY 'airflow_pass';
+GRANT ALL PRIVILEGES ON airflow_db.* TO 'airflow_user';
+
+mysql+mysqldb://airflow_db:airflow_pass@192.168.56.1:3306/airflow_db
+mysql+mysqlconnector://airflow_db:airflow_pass@192.168.56.1:3306/airflow_db
+```
+
 
 # note 
 - xcom (cross-communications) để truyền thông tin giữa các task trong dag
@@ -46,6 +90,9 @@ nên dùng celery executor vì nó có thể scale được số lượng các w
 
 [lotus doc - hiephm](https://lotus.vn/w/blog/gioi-thieu-ve-airflow-va-trien-khai-kien-truc-ha-348074727123714048.htm)
 
+[git  ha](https://github.com/teamclairvoyant/airflow-scheduler-failover-controller)
+
+[doc](https://airflow.apache.org/docs/apache-airflow/stable/start.html)
 
 
 
