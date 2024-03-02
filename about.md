@@ -14,6 +14,19 @@ Vì có thể lượng bài trên blog này có thể sẽ lớn dần lên theo
 
 Các bài viết sẽ được cập nhật theo thời gian. 
 
+
+### Quotes
+
+```
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+```
+
 ### Contact me
 
 Follow my [Github](https://github.com/longpt233), mail me at [Gmail](mailto:phanthanhlong@gmail.com), or chat with me on [Telegram](https://t.me/duahaukhonghat). 
