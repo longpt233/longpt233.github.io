@@ -29,6 +29,7 @@ system design step by step
 
 [ByteByteGoHq/system-design-101](https://github.com/ByteByteGoHq/system-design-101)
 
+[book](https://drive.google.com/file/d/1cNgwx-T9kgQDPBUTseQ_eArqAM2WHCVG/view)
 
 
 

@@ -9,6 +9,8 @@ secure hdfs with kerberos
 
 # Authorization problen
 
+
+
 # HA
 
 # Kerberos
