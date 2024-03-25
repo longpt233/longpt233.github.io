@@ -290,7 +290,7 @@ https://github.com/teamclairvoyant/airflow-scheduler-failover-controller/issues/
 ```
 </details> 
 
-Thực ra scheduler cũng không cần HA, cứ chạy 2 cái vì nó đã lock lại trong db, chỉ có 1 scheduler chạy được task một lúc thôi.
+Thực ra scheduler cũng không cần HA kiểu failover như này, cứ chạy 2 cái vì nó đã lock lại trong db, chỉ có 1 scheduler chạy được task một lúc thôi.
 
 
 
