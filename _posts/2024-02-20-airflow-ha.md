@@ -290,6 +290,8 @@ https://github.com/teamclairvoyant/airflow-scheduler-failover-controller/issues/
 ```
 </details> 
 
+Thực ra scheduler cũng không cần HA, cứ chạy 2 cái vì nó đã lock lại trong db, chỉ có 1 scheduler chạy được task một lúc thôi.
+
 
 
 # Note 
@@ -300,6 +302,8 @@ https://github.com/teamclairvoyant/airflow-scheduler-failover-controller/issues/
 
 
 # Ref 
+
+[ha scheduler](https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/scheduler.html)
 
 [lotus doc - hiephm](https://lotus.vn/w/blog/gioi-thieu-ve-airflow-va-trien-khai-kien-truc-ha-348074727123714048.htm)
 
