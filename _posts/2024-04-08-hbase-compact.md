@@ -9,6 +9,13 @@ hbase architecture
 
 # Compaction
 
+|path hdfs | mô tả |
+|-|-|
+| ```/hbase/<tablename>/<encoded-regionname>/<column-family>/<filename>``` | cấu trúc lưu hfile | 
+
+
+
+
 
 # Usecase
 
